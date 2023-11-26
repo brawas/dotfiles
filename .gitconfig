@@ -3,3 +3,7 @@
 	email = brawas.dd@gmail.com
 [init]
 	defaultBranch = main
+[branch]
+	autosetuprebase = always
+[pull]
+	rebase = true
