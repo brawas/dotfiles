@@ -53,9 +53,11 @@ function node-project {
 if uname -a | grep -q microsoft; then
     alias metamask-pass="pass crypto/wallets/metamask/main/password | /mnt/c/Windows/system32/clip.exe"
 	alias phantom-pass="pass crypto/wallets/phantom/password | /mnt/c/Windows/system32/clip.exe"
+	alias rainbow-wallet-pass="pass crypto/wallets/rainbow/password | /mnt/c/Windows/system32/clip.exe"
 else
     alias metamask-pass="pass -c crypto/wallets/metamask/main/password"
 	alias phantom-pass="pass -c crypto/wallets/phantom/password"
+	alias rainbow-wallet-pass="pass -c pass crypto/wallets/rainbow/password"
 fi
 
 
